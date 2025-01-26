@@ -1,0 +1,133 @@
+body{
+    display: flex;
+      justify-content: center; /* Horizontal center */
+      align-items: center;     /* Vertical center */
+      height: 100vh;           /* Full viewport height */
+      margin: 0;          
+    background-color: burlywood; 
+}
+
+.container{  
+    background-color: bisque;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    width: 500px;
+    margin: 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: black;
+    text-decoration: underline;
+}
+
+
+input{
+    background-color: beige;
+padding: 10px 15px;
+margin-bottom: 15px;
+font-size: 16px;
+border-radius: 5px;
+border: 1px solid black;
+width: 300px;
+transition: background-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    background-color: #fff;
+    border-color: #4CAF50;
+}
+
+button{
+    background-color:#4CAF50 ;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover{
+    background-color: #45a049;
+    transform: translateY(-2px); 
+}
+
+button:active {
+    transform: translateY(0); 
+}
+
+#taskItem{
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px 0;
+    border:1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+} 
+
+#taskList{
+    list-style-type:none;
+    padding: 2px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+li:hover {
+    background-color: #f1f1f1; /* Light hover effect */
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+li button.remove {
+    background-color: red;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+li button.remove:hover {
+    background-color: #f44336;
+    color: #fff;
+}
+
+li button.edit {
+    background-color: rgb(28, 28, 255);
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+li button.edit:hover {
+    background-color:blue;
+    color: #fff;
+}
